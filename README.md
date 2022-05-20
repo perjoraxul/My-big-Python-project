@@ -42,13 +42,13 @@ Mentions :
 
 - the list "COLUMN_CONFIGURATION_LIST" contains all the columns i want to merge for further analysis: 
 
-    # FTHG - Full Time Home Goals
-    # FTAG - Full Time Away Goals
-    # HTHG - Half Time Home Goals 
-    # HTAG - Half Time Away Goals
-    # B365H - Odd of host team, on Bet 365 platform
-    # B365D - Odd of draw, on Bet 365 platform
-    # B365A - Odd of guest team, on Bet 365 platform
+    FTHG - Full Time Home Goals
+    FTAG - Full Time Away Goals
+    HTHG - Half Time Home Goals 
+    HTAG - Half Time Away Goals
+    B365H - Odd of host team, on Bet 365 platform
+    B365D - Odd of draw, on Bet 365 platform
+    B365A - Odd of guest team, on Bet 365 platform
 
 4) odds_comparison_GOOD.py 
 
