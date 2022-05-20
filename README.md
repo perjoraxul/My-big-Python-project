@@ -96,4 +96,8 @@ Mentions :
 
 - usually you will want to find a folder with the team name, in which you'll find information about the last matches played by that team.
 
+3) directory_path_GOOD
+
+Purpose : Template-like module which stores the paths for the necessary files.
+
 example1.csv - 
