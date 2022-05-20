@@ -1,4 +1,6 @@
-extract_teams_path = '\\Countries\\'
-raw_data_path = 'C:\\raw_data\\'
-main_path = 'C:\\masked\personal\\la ce lucrez\\webscraper\\football data\\main\\'
-merged_csvs = "\\merged_csvs\\"
+extract_teams_path = 'C:\\masked\personal\\la ce lucrez\My big python project\\My-big-Python-project\\Countries\\'
+raw_data_path = 'C:\\masked\\personal\\la ce lucrez\\My big python project\\My-big-Python-project\\raw_data\\'
+main_path = 'C:\\masked\personal\\la ce lucrez\\My big python project\\My-big-Python-project\\'
+merged_csvs = "C:\\masked\\personal\\la ce lucrez\\My big python project\\My-big-Python-project\\merged_csvs\\" 
+statistics_path = "C:\\masked\\personal\\la ce lucrez\\My big python project\\My-big-Python-project\\statistics\\" 
+testing_statistics_path = "C:\\masked\\personal\\la ce lucrez\\My big python project\\My-big-Python-project\\testing_statistics\\" 

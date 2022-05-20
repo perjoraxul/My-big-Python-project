@@ -1,9 +1,9 @@
 import pandas as pd
-from directory_paths import main_path
+from directory_paths import merged_csvs,statistics_path
 
 
 def statistics() : 
-    PATH_FOR_READING_TABLE = main_path
+    PATH_FOR_READING_TABLE = merged_csvs
 
     def StdNow(beggin_of_interval, end_of_interval, which_column):
         '''Calculates the standard deviation of the interval between 2 arguments; doesn't include "end", includes "beggin".
@@ -112,11 +112,11 @@ def statistics() :
         stdStepSeries = pd.Series(stdStepCurrentL)
 
         outputData = pd.DataFrame([meanSeries, stdSeries, diffSeries, stdStepSeries]).transpose()
-        outputData.to_csv(f"{sh}.csv", index=False)
+        outputData.to_csv(f"{statistics_path}{sh}.csv", index=False)
         empty = pd.DataFrame(["", ""])
         out = out.append(outputData, ignore_index=True)
         out = out.append(empty, ignore_index=True)
 
     #create output will all the columns
     outName = input("Name of the output csv: ")
-    out.to_csv(f"{outName}.csv", index=False)
+    out.to_csv(f"{statistics_path}{outName}.csv", index=False)

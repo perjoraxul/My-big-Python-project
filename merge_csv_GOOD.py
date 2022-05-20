@@ -68,7 +68,7 @@ def merge_csvs() :
             dataFrame = pd.DataFrame(DICT_TO_CSV)
             dataFrame = dataFrame.sort_values(by='Date',ascending=False)
             dataFrame = dataFrame.drop(columns=['Date'])
-            dataFrame.to_csv(f'{merged_csvs}{team}_s{categories}.csv',index = False)
+            dataFrame.to_csv(f'{merged_csvs}{team}_{categories}.csv',index = False)
 
 
             print("---------------------------------------------------------------------------------")

@@ -1,5 +1,6 @@
 import pandas as pd
 from get_csv_titles_GOOD import csv_titles
+from directory_paths import merged_csvs
 import math
 
 def see_results():
@@ -50,7 +51,7 @@ def see_results():
 
         
     #get csv titles from the folder current working directory
-    csvs = csv_titles()
+    csvs = csv_titles(merged_csvs)
     no_of_bins = int(input('How many bins do you want, for the data to be categorized in? \n'))
 
     for csv in csvs : 

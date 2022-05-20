@@ -1,9 +1,9 @@
 import pandas as pd
-from directory_paths import main_path
+from directory_paths import merged_csvs,statistics_path,testing_statistics_path
 
 
 def testing_statistics():
-    PATH_FOR_READING_TABLE = main_path
+    PATH_FOR_READING_TABLE = merged_csvs
 
     name_of_table = input("What table do you want to read? ")
     allData = pd.read_csv(f"{PATH_FOR_READING_TABLE}{name_of_table}.csv", encoding='ISO-8859-1')
@@ -12,7 +12,7 @@ def testing_statistics():
 
     for j in range(how_many_columns_have_been_red):
 
-        stdData = pd.read_csv(f"{j}.csv", encoding='ISO-8859-1')
+        stdData = pd.read_csv(f"{statistics_path}{j}.csv", encoding='ISO-8859-1')
 
         # extract last std and last count
         lastStd = stdData.iloc[0, 1]
@@ -36,5 +36,5 @@ def testing_statistics():
             print("stepStd :", stepStd, "count: ", count)
             the_string += f"Testing {i} goal/goals for column number  {j+1} \n average : {meanNow}, standard dev : {stdNow} stepStd : {stepStd} , count:  {count}\n\n"
 
-        fileToWrite = open(f"{PATH_FOR_READING_TABLE}{i}.txt", "a")
+        fileToWrite = open(f"{testing_statistics_path}{name_of_table}_statistics.txt", "a")
         fileToWrite.write(the_string)
