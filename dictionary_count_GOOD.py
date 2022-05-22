@@ -22,7 +22,7 @@ def goals_after(goals_list) :
                     try :
                         goals_count[str(my_list[goal])][my_list[goal - 1]  * 2 + 1] += 1
                     except : 
-                        print('Cred ca s-a terminat sirul. ')
+                        print('The string has ended. ')
 
 
         # for keys,values in goals_count.items() :
