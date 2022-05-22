@@ -96,8 +96,12 @@ Mentions :
 
 - usually you will want to find a folder with the team name, in which you'll find information about the last matches played by that team.
 
-3) directory_path_GOOD
+3) directory_paths
 
 Purpose : Template-like module which stores the paths for the necessary files.
+
+4) params_GOOD.py
+
+Purpose : Holds 2 functions which will be used in other modules.
 
 example1.csv - 

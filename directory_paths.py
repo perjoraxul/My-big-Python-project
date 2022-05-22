@@ -4,3 +4,4 @@ main_path = 'C:\\masked\personal\\la ce lucrez\\My big python project\\My-big-Py
 merged_csvs = "C:\\masked\\personal\\la ce lucrez\\My big python project\\My-big-Python-project\\merged_csvs\\" 
 statistics_path = "C:\\masked\\personal\\la ce lucrez\\My big python project\\My-big-Python-project\\statistics\\" 
 testing_statistics_path = "C:\\masked\\personal\\la ce lucrez\\My big python project\\My-big-Python-project\\testing_statistics\\" 
+testing_bets = "C:\\masked\\personal\\la ce lucrez\\My big python project\\My-big-Python-project\\testing_bets" 

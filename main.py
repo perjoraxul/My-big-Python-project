@@ -3,9 +3,12 @@ from merge_csv_GOOD import merge_csvs
 from odds_comparison_GOOD import see_results
 from statistics_GOOD import statistics
 from testing_statistics_GOOD import testing_statistics
+from ma_bets_GOOD import testing_ma_bets
+from goal_patterns_GOOD import goal_patterns
+
 
 import os
-from directory_paths import main_path
+from directory_paths     import main_path
 
 def see_options(dictionary):
     '''see what actions you can perform'''
@@ -34,10 +37,17 @@ options_dictionary = {
     5 : {
         "info" : "Test the analysis from '4.' on the next match of your team of choosing. ",
         "action" : testing_statistics
+    },
+
+    6 : {
+        "info" : "Test if the  number of goals of next match is over/under/equal to the average of goals of the last 3 matches.",
+        "action" : testing_ma_bets
+    },
+    7 : {
+        "info" : "See how many goals can not be scored after a match with a specific result. ",
+        "action" : goal_patterns
     }
 }
-
-
 print('Hi. Welcome to my project.\n')
 
 see_options(options_dictionary)
